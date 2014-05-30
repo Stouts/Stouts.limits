@@ -5,10 +5,9 @@ limits_path: /etc/security/limits.d/tune.conf
 
 # See http://linux.die.net/man/5/limits.conf for description
 limits_limits:
-  - *    hard    nofile    65535
-  - *    soft    nofile    65535
+  - *    -    nofile    65535
 
 limits_sysctl:
-    - { name: 'net.ipv4.tcp_tw_recycle',      value: '1' }
-    - { name: 'net.ipv4.tcp_tw_reuse',        value: '1' }
-    - { name: 'net.ipv4.ip_local_port_range', value: '15000 35530' }
+  - { name: 'net.ipv4.tcp_tw_recycle',      value: '1' }
+  - { name: 'net.ipv4.tcp_tw_reuse',        value: '1' }
+  - { name: 'net.ipv4.ip_local_port_range', value: '15000 35530' }
