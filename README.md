@@ -2,8 +2,7 @@ Stouts.limits
 =============
 
 [![Build Status](http://img.shields.io/travis/Stouts/Stouts.limits.svg?style=flat-square)](https://travis-ci.org/Stouts/Stouts.limits)
-[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.limits-blue.svg?style=flat-square)](https://galaxy.limits.com/list#/roles/954)
-[![Tag](http://img.shields.io/github/tag/Stouts/Stouts.limits.svg?style=flat-square)]()
+[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.limits-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/954)
 
 Ansible role which manage system limis.
 
