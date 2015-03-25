@@ -1,5 +1,12 @@
 ---
 
+- name: Enable pam limits
+  lineinfile: dest=/etc/pam.d/{{item}}
+              regexp="^session    required   pam_limits.so"
+              line="session    required   pam_limits.so"
+              state=present
+  with_items:  limits_pamd_files
+
 - name: Configure limits
   template: src=limits.conf.j2 dest={{limits_path}} owner=root group=root mode=0644
 
