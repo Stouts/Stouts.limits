@@ -16,3 +16,5 @@ limits_hosts_deny: []
 
 limits_pamd_files:
 - "su"
+
+sysctl_ignore: no
