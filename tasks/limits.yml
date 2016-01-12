@@ -14,8 +14,6 @@
   sysctl: name={{item.name}} value={{item.value}} ignoreerrors={{sysctl_ignore}}
   with_items:  limits_sysctl
 
-- debug: var=sysctl_ignore
-
 - name: Update hosts.allow
   template: src=hosts.allow.j2 dest=/etc/hosts.allow
 
