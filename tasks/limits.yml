@@ -5,14 +5,14 @@
               regexp="^session    required   pam_limits.so"
               line="session    required   pam_limits.so"
               state=present
-  with_items:  limits_pamd_files
+  with_items:  "{{limits_pamd_files}}"
 
 - name: Configure limits
   template: src=limits.conf.j2 dest={{limits_path}} owner=root group=root mode=0644
 
 - name: Update sysctl
   sysctl: name={{item.name}} value={{item.value}}
-  with_items:  limits_sysctl
+  with_items:  "{{limits_sysctl}}"
 
 - name: Update hosts.allow
   template: src=hosts.allow.j2 dest=/etc/hosts.allow
