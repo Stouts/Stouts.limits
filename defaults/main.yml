@@ -7,6 +7,8 @@ limits_path: /etc/security/limits.d/tune.conf
 limits_limits:
 - "*    -    nofile    65535"
 
+limits_sysctl_ignore: false
+
 limits_sysctl:
 - { name: 'net.ipv4.tcp_tw_recycle', value: '1' }
 - { name: 'net.ipv4.tcp_tw_reuse', value: '1' }

@@ -11,7 +11,7 @@
   template: src=limits.conf.j2 dest={{limits_path}} owner=root group=root mode=0644
 
 - name: Update sysctl
-  sysctl: name={{item.name}} value={{item.value}} ignoreerrors={{sysctl_ignore}}
+  sysctl: name={{item.name}} value={{item.value}} ignoreerrors={{limits_sysctl_ignore}}
   with_items:  "{{limits_sysctl}}"
 
 - name: Update hosts.allow
