@@ -17,7 +17,6 @@ limits_limits:
   - "*    -    nofile    65535"
 
 limits_sysctl:
-  - { name: 'net.ipv4.tcp_tw_recycle',      value: '1' }
   - { name: 'net.ipv4.tcp_tw_reuse',        value: '1' }
   - { name: 'net.ipv4.ip_local_port_range', value: '15000 35530' }
 
