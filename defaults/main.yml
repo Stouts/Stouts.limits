@@ -10,7 +10,6 @@ limits_limits:
 limits_sysctl_ignore: false
 
 limits_sysctl:
-- { name: 'net.ipv4.tcp_tw_recycle', value: '1' }
 - { name: 'net.ipv4.tcp_tw_reuse', value: '1' }
 
 limits_hosts_allow: []
