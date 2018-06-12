@@ -1,2 +1,2 @@
 ---
-sysctl_ignore: yes
+limits_sysctl_ignore: true
